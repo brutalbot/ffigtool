@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Instagram Likes & Followers</title>
+    <link rel="icon" type="image/x-icon" href="/icon.png">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    <div class="preloader">
+        <img src="img/like.gif" alt="Perloader Image" style="width: 100%; height: 100%; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);">  
+    </div>
+    <header>
+        <h1>Free Instagram Likes & Followers</h1>
+    </header>
+    <section id="color">
+        <h2>Book Free Like Now</h2>
+        <br>
+        <p>Get 100% Free Instagram Likes & Followers</p>
+		<br>
+        <div class="check">
+            <img src="img/img01.webp" width="40%" height="50%">
+        </div>
+        <button><a href="login.html">Order For Free Now</a></button>
+    </section>
+    <section id="followers">
+        <h2>Get More Followers</h2>
+		<br>
+        <p>Boost your profile with our free followers service. Gain real and active followers on Instagram.</p>
+		<br>
+        <div class="check">
+            <img src="img/follow.png" width="40%" height="50%">
+        </div>
+        <button><a href="login.html">Order For Free Now</a></button>
+    </section>
+    <section id="reel-view">
+        <h2>Increase Reel Views</h2>
+		<br>
+        <p>Make your Instagram Reels stand out! Increase the views on your Reels for free.</p>
+		<br>
+        <div class="check">
+            <img src="img/reel.png" width="40%" height="50%">
+        </div>
+        <button><a href="login.html">Order For Free Now</a></button>
+    </section>
+    <section id="comment">
+        <h2>Receive More Comments</h2>
+		<br>
+        <p>Engage with your audience. Use our service to get more comments on your Instagram posts.</p>
+		<br>
+        <div class="check">
+            <img src="img/comment.png" width="40%" height="50%">
+        </div>
+        <button><a href="login.html">Order For Free Now</a></button>
+    </section>
+    <section id="story-view">
+        <h2>Boost Story Views</h2>
+		<br>
+        <p>Maximize your reach. Get more views on your Instagram Stories with our free service.</p>
+		<br>
+        <div class="check">
+            <img src="img/views.jpg" width="40%" height="50%">
+        </div>
+        <button><a href="login.html">Order For Free Now</a></button>
+    </section>
+    <br/>
+    <footer>
+        <p>&copy; 2023 Free Instagram Likes & Followers. All rights reserved.</p>
+    </footer>
+    <div class="avatar" id="avatar"></div>
+    <script>
+        var avatar = document.getElementById('avatar');
+
+        document.addEventListener('mousemove', moveAvatar);
+
+        function moveAvatar(event) {
+            var x = event.clientX;
+            var y = event.clientY;
+            avatar.style.left = x + 'px';
+            avatar.style.top = y + 'px';
+        }
+
+        function hideAvatar() {
+            avatar.style.display = 'none';
+        }
+    </script>
+    <script>
+        $(window).on('load', function () {
+            $(".preloader").delay(1000).fadeOut(1000);
+        });
+    </script>
+</body>
+</html>

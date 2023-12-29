@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Instagram Likes & Followers</title>
+    <link rel="icon" type="image/x-icon" href="/icon.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .feature-box {
+            flex: 1 1 45%;
+            margin: 10px;
+            padding: 20px;
+            background-color: #e0e0e0;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .loading-popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .loading-box {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Free Instagram Likes & Followers</h1>
+    </header>
+
+    <section>
+        <div class="feature-box">
+            <h2>Get Free 20 Followers</h2>
+            <p>Get Free 20 Followers every 7 hours</p>
+            <button onclick="showLoadingPopup('Followers')">Get Started</button>
+        </div>
+
+        <div class="feature-box">
+            <h2>Get Free 20 Likes</h2>
+            <p>Get Free 20 Likes every 7 hours</p>
+            <button onclick="showLoadingPopup('Likes')">Get Started</button>
+        </div>
+
+        <div class="feature-box">
+            <h2>Get Free 20 Views</h2>
+            <p>Get Free 20 Views every 7 hours</p>
+            <button onclick="showLoadingPopup('Views')">Get Started</button>
+        </div>
+
+        <div class="feature-box">
+            <h2>Get Free 20 Comments</h2>
+            <p>Get Free 20 Comments every 7 hours</p>
+            <button onclick="showLoadingPopup('Comments')">Get Started</button>
+        </div>
+
+        <div class="feature-box">
+            <h2>Get Free 20 Story Views</h2>
+            <p>Get Free 20 Story Views every 7 hours</p>
+            <button onclick="showLoadingPopup('Story Views')">Get Started</button>
+        </div>
+
+        <div class="feature-box">
+            <h2>Get Free 20 Story Replies</h2>
+            <p>Get Free 20 Story Replies every 7 hours</p>
+            <button onclick="showLoadingPopup('Story Replies')">Get Started</button>
+        </div>
+
+        <div class="feature-box">
+            <h2>Get Free 20 Story Votes</h2>
+            <p>Get Free 20 Story Votes every 7 hours</p>
+            <button onclick="showLoadingPopup('Story Votes')">Get Started</button>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Free Instagram Likes & Followers. All rights reserved.</p>
+    </footer>
+
+    <div class="loading-popup" id="loadingPopup">
+        <div class="loading-box">
+            <p>Loading <span id="loadingAction"></span>...</p>
+        </div>
+    </div>
+
+    <script>
+        function showLoadingPopup(action) {
+            document.getElementById('loadingAction').innerText = action;
+            document.getElementById('loadingPopup').style.display = 'flex';
+            simulateLoading(action);
+        }
+
+        function simulateLoading(action) {
+            let count = 1;
+            const interval = setInterval(() => {
+                if (count <= 20) {
+                    document.getElementById('loadingAction').innerText = `${action} (${count}/20)`;
+                    count++;
+                } else {
+                    document.getElementById('loadingPopup').style.display = 'none';
+                    clearInterval(interval);
+                }
+            }, 30000); // Update every 30 seconds
+        }
+    </script>
+</body>
+
+</html>
